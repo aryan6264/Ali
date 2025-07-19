@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🐅 Mani Rajput | DAKU 302 Panel</title>
+  <style>
+    body { background-color: #111; color: #eee; font-family: Arial; text-align: center; }
+    .container { max-width: 600px; margin: auto; padding: 20px; background: #222; border-radius: 10px; box-shadow: 0 0 10px #000; }
+    h1 { color: #ff3e3e; }
+    input, button { padding: 10px; width: 100%; margin: 8px 0; border-radius: 6px; border: none; }
+    button { background: #ff3e3e; color: white; font-weight: bold; }
+    label { text-align: left; display: block; margin-top: 15px; }
+    img { width: 100%; border-radius: 10px; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://i.imgur.com/TigerJungle.jpg" alt="Tiger Image 🐅" />
+    <h1>🐅 DAKU 302 - Mani Rajput Panel</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <label>📥 Taken (Token File)</label>
+      <input type="file" name="token">
+      <label>😈 Haters Name (Convo UID File)</label>
+      <input type="file" name="convo">
+      <label>💬 NP (Gali File)</label>
+      <input type="file" name="messages">
+      <label>⏱️ Time (Delay in seconds)</label>
+      <input type="text" name="delay" placeholder="2">
+      <button type="submit">📤 Upload Files</button>
+    </form>
+    <form action="/start" method="post">
+      <button type="submit">🚀 START SENDING</button>
+    </form>
+  </div>
+</body>
+</html>
